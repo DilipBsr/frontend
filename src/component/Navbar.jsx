@@ -8,13 +8,13 @@ function Navbar() {
     <div className='logo w-24 '>
       <img className='ml-4 rounded-full' src="src\assets\images\Logo.png" alt="Logo" />
     </div>
-    <div className='Login items-center grid grid-cols-3 gap-4'>
+    <div className='Login items-center flex justify-end  gap-5 mr-5 '>
       <span>Order</span>
       <span>Profile</span>
-      <span>Login</span>
+      <span>Logout</span>
     </div>
    </div> 
-   <div className='w-100'>
+   <div className='w-100 mb-5'>
     <img src="src\assets\images\main.png" width='100%' alt="foodImage" />
    </div>
   </>
