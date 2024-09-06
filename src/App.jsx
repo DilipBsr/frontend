@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './component/Navbar'
+import Home from './component/Home'
 import Card from './component/Card'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { dark } from '@mui/material/styles/createPalette'
@@ -12,18 +13,7 @@ function App() {
     <ThemeProvider theme={DarkTheme}>
       <CssBaseline/>
       <Navbar/>
-      <center className='flex flex-wrap justify-center '>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-      </center>
+      <Home/>
     </ThemeProvider>
   )
 }
