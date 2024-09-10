@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './component/Navbar'
 import Home from './component/Home'
 import Card from './component/Card'
+import Payment from './component/Payment'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { dark } from '@mui/material/styles/createPalette'
 import DarkTheme from './Theme/DarkTheme'
@@ -12,8 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
       <CssBaseline/>
-      <Navbar/>
-      <Home/>
+      <Payment/>
     </ThemeProvider>
   )
 }
