@@ -13,7 +13,8 @@ function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
       <CssBaseline/>
-      <Payment/>
+      <Navbar/>
+      <Home/>
     </ThemeProvider>
   )
 }
