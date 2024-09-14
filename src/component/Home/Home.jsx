@@ -1,6 +1,7 @@
 import React from 'react'
-import "../CSS/Home.css";
+import "../../CSS/Home.css";
 import Multicarousal from './Multicarousal';
+import Search from './Search'
 import Card from './Card';
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <section className='body '>
       <center className='flex flex-wrap justify-center '>
       <Multicarousal/>
+      <Search/>
         <Card/>
         <Card/>
         <Card/>
