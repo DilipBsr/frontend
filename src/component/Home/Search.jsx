@@ -1,4 +1,8 @@
 import React from 'react'
+import Multicarousal from './Multicarousal'
+import RestaurantCarousal from './RestaurantCarousal'
+import "../../CSS/Home.css";
+ 
 
 function Search() {
   return (
@@ -15,9 +19,12 @@ function Search() {
         </div>
       </div>
 
-      <div className='flex gap-5 w-2/6 justify-self-start ml-14 mb-10'>
+      {/* <div className='flex gap-5 w-2/6 justify-self-start ml-14 mb-10'>
         <img src="src\assets\images\image.jpeg" alt="Location" />
         <img src="src\assets\images\images (5).jpeg" alt="Location" />
+      </div> */}
+      <div>
+        <RestaurantCarousal/>
       </div>
       <hr />
     </div>

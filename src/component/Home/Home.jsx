@@ -6,8 +6,7 @@ import Card from './Card';
 function Home() {
   return (
     <div>
-        <section className='banner w-100 h-52 lg:h-lvh mb-5 flex relative justify-center items-center -z-50'>
-        
+        <section className='banner w-100 h-52 lg:h-lvh mb-5 flex relative justify-center items-center -z-50 '>
         </section>
       <section className='body '>
       <center className='flex flex-wrap justify-center '>
