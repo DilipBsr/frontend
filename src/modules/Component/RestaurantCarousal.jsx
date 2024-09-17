@@ -4,37 +4,33 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import { TopItems } from '../../assets/Data/topItems';
 
-function Multicarousal() {
+//Components
+import { Restaurant } from '../../assets/Store/Restaurant';
+import Card from './Card';
+
+function RestaurantCarousal() {
   let sliderRef = useRef(null);
   const play = () => {
     sliderRef.slickPlay();
   };
-  const pause = () => {
-    sliderRef.slickPause();
-  };
-
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 3000
   };
   return (
-    <div className='multipic slider-container w-screen p-5 '>
-    <Slider ref={slider => (sliderRef = slider)} {...settings}>
-          {TopItems.map((item)=>(
-            <div key={item.dish}>
-              <h3>
-                <img className='w-28 h-28 p-2 lg:w-64 lg:h-64 rounded-full' src={item.image}  alt="Image" />
-                <span>{item.dish}</span>
-              </h3>
+    <div className="m-5 mx-10 ">
+      <Slider ref={slider => (sliderRef = slider)} {...settings}>
+        {Restaurant.map((item)=>(
+            <div className='lg:px-36 sm:px-0'>
+              <Card key={item.place} location={item.place} image={item.image}/>
             </div>
-          ))}
-    </Slider>
+        ))}
+      </Slider>
       <div style={{ textAlign: "center", display:'block', width:'100%' }}>
         <button className="button" onClick={play}>
           <PlayArrowIcon/>
@@ -44,4 +40,4 @@ function Multicarousal() {
   );
 }
 
-export default Multicarousal;
+export default RestaurantCarousal;
