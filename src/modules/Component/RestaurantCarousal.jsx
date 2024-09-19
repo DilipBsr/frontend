@@ -15,18 +15,16 @@ function RestaurantCarousal() {
     sliderRef.slickPlay();
   };
   const settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 2500,
   };
   return (
-    <div className="m-5 mx-10 ">
+    <div className="m-5 flex-col items-center justify-center">
       <Slider ref={slider => (sliderRef = slider)} {...settings}>
         {Restaurant.map((item)=>(
-            <div className='lg:px-36 sm:px-0'>
+            <div className='px-4 lg:px-36 md:px-48'>
               <Card key={item.place} location={item.place} image={item.image}/>
             </div>
         ))}
