@@ -7,7 +7,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 function Navbar() {
   return (
-  <div className=' Navbar grid grid-cols-2 gap-2 p-2 w-100 '>
+  <div className=' Navbar grid grid-cols-2 gap-2 p-2 w-100 "bg-white rounded-lg shadow dark:bg-gray-900 m-4 '>
     <div className='logo w-24 lg:w-32'>
       <img className='ml-4 rounded-full' src="src\assets\images\Logo.png" alt="Logo" />
     </div>
